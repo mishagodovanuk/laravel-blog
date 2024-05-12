@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    @include('frontend.includes.head')
+    @include('frontend.components.head')
 </head>
 <body class="antialiased">
     <div class="container">
-        @include('frontend.includes.header')
+        @include('frontend.components.header')
     </div>
 
     <main role="main" class="container">
@@ -13,7 +13,8 @@
     </main>
 
     <footer class="footer">
-        @include('frontend.includes.footer')
+        @include('frontend.components.footer')
     </footer>
+    @include('frontend.components.footer_links')
 </body>
 </html>
