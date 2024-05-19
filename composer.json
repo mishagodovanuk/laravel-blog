@@ -6,15 +6,12 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
-        "backpack/crud": "^6.7",
-        "backpack/theme-coreuiv4": "^1.1",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8"
     },
     "require-dev": {
-        "backpack/generators": "^4.0",
         "fakerphp/faker": "^1.9.1",
         "laravel/breeze": "^1.29",
         "laravel/pint": "^1.0",
@@ -22,7 +19,6 @@
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^7.0",
         "phpunit/phpunit": "^10.1",
-        "roave/security-advisories": "dev-latest",
         "spatie/laravel-ignition": "^2.0"
     },
     "autoload": {
@@ -50,8 +46,7 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
-        ],
-        "post-install-cmd": ["@php artisan storage:link --quiet"]
+        ]
     },
     "extra": {
         "laravel": {
@@ -68,11 +63,5 @@
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true,
-    "repositories": {
-        "nova": {
-            "type": "composer",
-            "url": "https://nova.laravel.com"
-        }
-    }
+    "prefer-stable": true
 }
